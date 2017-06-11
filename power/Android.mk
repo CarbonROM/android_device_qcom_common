@@ -100,6 +100,8 @@ else
 LOCAL_MODULE := power.$(TARGET_BOARD_PLATFORM)
 endif
 LOCAL_MODULE_TAGS := optional
+LOCAL_CFLAGS := -Wno-unused-parameter -Wno-unused-variable
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_SHARED_LIBRARY)
 
 endif # TARGET_POWERHAL_VARIANT == qcom || WITH_QC_PERF

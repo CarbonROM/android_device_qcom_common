@@ -8,5 +8,6 @@ LOCAL_C_INCLUDES := $(call project-path-for,recovery) \
 LOCAL_SRC_FILES := gpt-utils.cpp dec.cpp oem-updater.cpp
 LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 LOCAL_MODULE := librecovery_updater_msm
+LOCAL_VENDOR_MODULE := true
 include $(BUILD_STATIC_LIBRARY)
 endif
